@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+{% extends "users/base.html" %}
+{% block content %}
+{% load static %}
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CUSAT Fitness Centre</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="{% static 'css/superfish.css' %}">
+
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+	<!-- Modernizr JS -->
+	<script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		<div id="fh5co-wrapper">
+		<div id="fh5co-page">
+		<div id="fh5co-header">
+			<header id="fh5co-header-section">
+				<div class="container">
+					<div class="nav-header">
+						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+						<h1 id="fh5co-logo"><a href="{% url 'profile' %}">CUSAT<span>FITNESS</span></a></h1>
+						<!-- START #fh5co-menu-wrap -->
+						<nav id="fh5co-menu-wrap" role="navigation">
+							<ul class="sf-menu" id="fh5co-primary-menu">
+								<li>
+									<a href="{% url 'profile' %}">Personal Details</a>
+								</li>
+								<li>
+									<a href="{% url 'workout' %}" class="fh5co-sub-ddown">Workout Plan</a>
+									 
+								</li>
+								<li>
+									<a href="{% url 'diet' %}" class="fh5co-sub-ddown">Diet Plan</a>
+									 
+								</li>
+								<li><a href="{% url 'logout' %}">Logout</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>		
+		</div>
+		<!-- end:fh5co-header -->
+		<div class="fh5co-parallax" style="background-image: url({% static 'images/ddd.jpg' %});" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
+						<div class="fh5co-intro fh5co-table-cell animate-box">
+							<h1 class="text-center" >DIET PLAN: <br>INCREASE MUSCLE MASS</h1>
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end: fh5co-parallax -->
+		<!-- end:fh5co-hero -->
+		<div id="fh5co-programs-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="heading-section text-center animate-box">
+							<h2>Muscle Gain</h2>
+                           <p><b><u> 7-Day Bodybuilding Diet Plan </u></b></p>
+
+<p>Below is a 7-day diet plan which can be used during both on and off-season. During both, the type of foods that you eat should be the same with the only difference being the quantity – this explains why quantities of each food have not been prescribed.
+Be sure to calculate both calorie and macro targets prior to beginning any nutritional plan. If this is not determined, significant progress is unlikely to follow. Ascertaining these targets will give you a greater understanding of food quantities and food types to prioritize.
+Remember that this is a sample plan and therefore it can be adapted to suit season, nutritional preferences and dietary requirements.</p>
+
+<p><b>Day 1</b></p>
+<p>Breakfast	Oatmeal (with milk or water),
+Handful of Dried Fruit and Assorted Nuts,
+Snack 1	Boiled Eggs,
+Lunch	Chicken or Turkey,
+Medium-sized Baked Potato,
+Brown Rice,
+Dinner	Salmon Fillet with Sweet Chilli Sauce,
+Brown Pasta,
+Spinach,
+Snack 2	Protein Shake,
+Banana</p>
+<p><b>Day 2</b></p>
+<p>Breakfast	Scrambled Egg,
+Avocado,
+Whole Grain Toast,
+Snack 1	Peanut butter,
+Apple,
+Lunch	Tuna,
+Brown Pasta,
+Green Salad,
+Dinner	Chicken Stir Fry,
+Soy Sauce,
+Peppers, Onion & Broccoli,
+Snack 2	Protein Shake,
+Assorted Nuts</p>
+<p><b>Day 3</b></p>
+<p>Breakfast	Chicken / Turkey Sausage,
+Egg,
+Whole Grain Toast,
+Snack 1	Greek Yogurt,
+Granola,
+Lunch	Whole grain Wrap with lettuce,
+Chicken / Turkey,
+Black Beans,
+Dinner	Pork Tenderloin,
+Sweet Potato,
+Corn,
+Snack 2	Protein Shake,
+Berries</p>
+<p><b>Day 4</b></p>
+<p>Breakfast	Oatmeal (with milk or water),
+Handful of Dried Fruit and Assorted Nuts,
+Snack 1	Whole Grain Toast with Peanut Butter,
+Orange,
+Lunch	Chicken in tomato gravy,
+Brown Rice,
+Dinner	Beef Sirloin,
+Boiled sweet Potato Side Salad,
+Snack 2	Protein Shake,
+Berries</p>
+<p><b>Day 5</b></p>
+<p>Breakfast	Overnight Oats,
+Greek Yogurt,
+Berries,
+Snack 1	Cottage Cheese with Fresh Berries,
+Lunch	Whole Grain Wraps,
+Whole grain wrap with tandoori chicken and bell peppers,
+Avocado,
+Dinner	Cod Fillet with boiled quinoa,
+Peas,
+Snack 2	Protein Shake,
+Handful of Dried Fruit & Nuts</p>
+<p><b>Day 6</b></p>
+<p>Breakfast	Cod fillets,
+Boiled potatoes,
+Boiled green peas,
+Snack 1	Mixed seeds and pear,
+Lunch	Multigrain Roti,
+Chicken curry,
+Carrot salad,
+Dinner	Turkey Meatballs,
+Whole wheat Spaghetti,
+Spinach,
+Snack 2	Protein Shake,
+Melon</p>
+<p><b>Day 7</b></p>
+<p>Breakfast	Poached Eggs,
+Whole Grain Toast,
+Snack 1	Greek Yogurt,
+Handful of Fresh Berries & Nuts,
+Lunch	Beef curry,
+Quinoa,
+Broccoli,
+Dinner	Medium-sized Baked Potato,
+Tuna,
+Cheese,
+Green Salad,
+Snack 2	Protein Shake,
+Grapes</p>
+<p><b>Pros and Cons of Bodybuilding Nutrition</b></p>
+<p>There is no doubt that maintaining good nutrition can be tricky for all individuals. The bodybuilding diet can be particularly challenging yet also be highly rewarding at the same time. This section will detail a number of pros and cons often linked with the bodybuilder diet.</p>
+
+<p><b>Pros:</b>
+Keeping in mind the foods discussed above, basing a diet around many of the aforementioned food can have a substantial impact on overall health, not just muscle growth and fat loss.
+Following a diet similar to the sample plan will ensure that a wide range of micro nutrients are consumed. Micro nutrients are required for a number of functions including blood clotting, muscle contraction, fluid balancing, and cell maintenance & regeneration.
+A consistent, well-planned, nutrient-rich diet, has a clear and significant effect on overall health & function and minimizes the risk of developing chronic diseases such as diabetes, coronary heart disease and cancer.
+.Furthermore, a bodybuilder’s diet tends to be high in protein which has been found on numerous occasions to be beneficial for muscle & bone health, satiety, and for facilitating fat loss.
+Bodybuilder’s nutrition is typically highly regimented – this is often seen as a negative. However, being very strict in your nutrition and sticking to this nutrient-dense diet is clearly the most efficient method for ensuring success and for promoting health & function.
+Lastly, often bodybuilders are in the envious position in that they are permitted to eat meals and snacks at frequent intervals (as seen in the sample nutrition plan). The reason for this is to ensure that muscle protein synthesis (MPS) is optimized and maintained.
+MPS is the driving force behind muscular growth & maintenance and therefore, maximizing MPS is a top priority for all bodybuilders. By stimulating MPS, the rate of adaptation will increase thus facilitating a greater recovery and consequent growth.
+Failing to consume protein at regular intervals can cause MPS to drop to a suboptimal level and impede muscle building process. However, eating protein-based meals at regular intervals throughout the course of the day stimulates and optimizes MPS.</p>
+<p><b>Cons:</b>
+In preparation for a bodybuilding competition, it can be a real challenge for bodybuilders to significantly drop their body fat percentage down. For this to occur, the individual has to be strict and consistent with their nutrition to ensure that body fat is lost at a consistent rate.
+As mentioned earlier, a calorie deficit is required to bring about a reduction in body fat. However, maintaining a low-calorie intake over a long period of time can have a negative impact on energy levels and sleep.
+A combination of low energy and poor sleep may impact the individual’s ability to train at a high level. More specifically, failing to get enough sleep or having poor sleep quality can affect the recovery process from training bouts.
+As mentioned, bodybuilders have to be very regimented with every meal and should not deviate from their nutrition plan if at all possible. This does mean that socializing, drinking alcohol and eating out has to be occasional and in limits so it does not alter their goal.
+In addition, some may find the bodybuilder diet to be quite restrictive as there are a number of foods that may either be detrimental to progress or fail to fit the predetermined calorie and macro targets.
+Finally, there is a real need to track both macros and calories, particularly for the beginner. Tracking can become mundane and an annoyance at times, however, is the only way that the bodybuilder can ensure that they are eating correctly to optimize results.
+For more experienced bodybuilders there may be less of a demand to track every day as they will have a greater knowledge of what they need to eat, when to eat and the quantities required. However, tracking will still be required at certain times, regardless of experience.</p>
+<p><b>Summary:</b>
+Bodybuilding requires a large degree of commitment in terms of both training and nutrition. Those who are able to be consistent in training and nutrition will make the greatest progress.
+To optimize the rate of change, it is imperative that bodybuilders consume a range of nutrient-dense foods to fulfill their calorie and macro-nutrient requirements  Foods that can be detrimental, such as processed foods and alcohol, should be restricted as far as possible.</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="row text-center">
+					
+					
+				</div>
+			</div>
+		</div>
+		
+	<!-- END fh5co-page -->
+
+	</div>
+	<!-- END fh5co-wrapper -->
+
+	<!-- jQuery -->
+
+
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+	<!-- Stellar -->
+	<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+	<!-- Superfish -->
+	<script src="{% static 'js/hoverIntent.js' %}"></script>
+	<script src="{% static 'js/superfish.js' %}"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="{% static 'js/main.js' %}"></script>
+
+
+	</body>
+{% endblock %}
+</html>
+

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+{% extends "users/base.html" %}
+{% block content %}
+{% load static %}
+{% load crispy_forms_tags %}
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CUSAT Fitness Centre - Classes</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="{% static 'css/superfish.css' %}">
+
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+	<!-- Modernizr JS -->
+	<script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		<div id="fh5co-wrapper">
+		<div id="fh5co-page">
+		<div id="fh5co-header">
+			<header id="fh5co-header-section">
+				<div class="container">
+					<div class="nav-header">
+						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+						<h1 id="fh5co-logo"><a href="index.html">CUSAT<span> fitness</span></a></h1>
+						<!-- START #fh5co-menu-wrap -->
+						<nav id="fh5co-menu-wrap" role="navigation">
+							<ul class="sf-menu" id="fh5co-primary-menu">
+								<li>
+									<a href="{% url 'home' %}">Home</a>
+								</li>
+								<li class="active">
+									<a href="{% url 'classes' %}" class="fh5co-sub-ddown">Classes</a>
+								</li>
+								<li>
+									<a href="{% url 'schedule' %}">Schedule</a>
+								</li>
+								<li><a href="{% url 'login' %}">Login/Register</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>		
+		</div>
+		<!-- end:fh5co-header -->
+		<div class="fh5co-parallax" style="background-image: url({% static 'images/homeimage2.jpg' %});" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
+						<div class="fh5co-intro fh5co-table-cell animate-box">
+							<h1 class="text-center">Classes</h1>
+							<p>Cusat fitness offers an atmosphere unique in the fitness industry.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end: fh5co-parallax -->
+		<!-- end:fh5co-hero -->
+		<div id="fh5co-programs-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="heading-section text-center animate-box">
+							<h2>Our Programs</h2>
+							<p>It's what you choose to do today that truly counts.Courage doesn’t always roar. Sometimes courage is the quiet voice at the end of the day saying, I will try again.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row text-center">
+					<div class="col-md-4 col-sm-6">
+						<div class="program animate-box">
+							<img src="{% static 'images/fit-dumbell.svg' %}" alt="Cycling">
+							<h3>Strength Training</h3>
+							<p>Shape your body and burn fat with strength... </p>
+							<span><a href="{% url 'register' %}" class="btn btn-default">Join Now</a></span>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="program animate-box">
+							<img src="{% static 'images/fit-yoga.svg' %}" alt="">
+							<h3>Yoga Programs</h3>
+							<p>Improves your strength, balance and flexibility. ... </p>
+							<span><a href="{% url 'register' %}" class="btn btn-default">Join Now</a></span>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="program animate-box">
+							<img src="{% static 'images/fit-cycling.svg' %}" alt="">
+							<h3>Cycling Program</h3>
+							<p>Increase your cardiovascular fitness and strength... </p>
+							<span><a href="{% url 'register' %}" class="btn btn-default">Join Now</a></span>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="program animate-box">
+							<img src="{% static 'images/fit-boxing.svg' %}" alt="Cycling">
+							<h3>Boxing Fitness</h3>
+							<p>Boosts endurance and improves hand-eye coordination... </p>
+							<span><a href="{% url 'register' %}" class="btn btn-default">Join Now</a></span>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="program animate-box">
+							<img src="{% static 'images/fit-swimming.svg' %}" alt="">
+							<h3>Cardio Training</h3>
+							<p>Cardio training helps you live a fitter life... </p>
+							<span><a href="{% url 'register' %}" class="btn btn-default">Join Now</a></span>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="program animate-box">
+							<img src="{% static 'images/fit-massage.svg' %}" alt="">
+							<h3>Personal Training</h3>
+							<p>Tailored specifically around your individual fitness... </p>
+							<span><a href="{% url 'register' %}" class="btn btn-default">Join Now</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="fh5co-schedule-section" class="fh5co-lightgray-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="heading-section text-center animate-box">
+							<h2>Class Schedule</h2>
+							<p>Even the smallest action can make a big difference in your life. Believe in yourself and go for it.The more you sweat in training, the less you bleed in combat.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row animate-box">
+					<div class="col-md-10 col-md-offset-1 text-center">
+						<ul class="schedule">
+							<li><a href="#" class="active" data-sched="sunday">Sunday</a></li>
+							<li><a href="#" data-sched="monday">Monday</a></li>
+							<li><a href="#" data-sched="tuesday">Tuesday</a></li>
+							<li><a href="#" data-sched="wednesday">Wednesday</a></li>
+							<li><a href="#" data-sched="thursday">Thursday</a></li>
+							<li><a href="#" data-sched="monday">Monday</a></li>
+							<li><a href="#" data-sched="saturday">Saturday</a></li>
+						</ul>
+					</div>
+					<div class="row text-center">
+
+						<div class="col-md-12 schedule-container">
+
+							<div class="schedule-content active" data-day="sunday">
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-dumbell.svg' %}" alt="Cycling">
+										<small>06AM-7AM</small>
+										<h3>Body Building</h3>
+										<span>Steve Rogers</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-yoga.svg' %}" alt="">
+										<small>07AM-8AM</small>
+										<h3>Yoga Programs</h3>
+										<span>Wanda Maximoff</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-cycling.svg' %}" alt="">
+										<small>08AM-9AM</small>
+										<h3>Cycling Program</h3>
+										<span>Tony Stark</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-boxing.svg' %}" alt="Cycling">
+										<small>09AM-10AM</small>
+										<h3>Boxing Fitness</h3>
+										<span>Bruce Banner</span>
+									</div>
+								</div>
+							</div>
+							<!-- END sched-content -->
+
+							<div class="schedule-content" data-day="monday">
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-yoga.svg' %}" alt="">
+										<small>06AM-7AM</small>
+										<h3>Yoga Programs</h3>
+										<span>Wanda Maximoff</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-dumbell.svg' %}" alt="Cycling">
+										<small>07AM-8AM</small>
+										<h3>Body Building</h3>
+										<span>Steve Rogers</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-boxing.svg' %}" alt="Cycling">
+										<small>08AM-9AM</small>
+										<h3>Boxing Fitness</h3>
+										<span>Bruce Banner</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-cycling.svg' %}" alt="">
+										<small>09AM-10AM</small>
+										<h3>Cycling Program</h3>
+										<span>Tony Stark</span>
+									</div>
+								</div>
+								
+							</div>
+							<!-- END sched-content -->
+
+							<div class="schedule-content" data-day="tuesday">
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-dumbell.svg' %}" alt="Cycling">
+										<small>06AM-7AM</small>
+										<h3>Body Building</h3>
+										<span>Steve Rogers</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-yoga.svg' %}" alt="">
+										<small>07AM-8AM</small>
+										<h3>Yoga Programs</h3>
+										<span>Wanda Maximoff</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-cycling.svg' %}" alt="">
+										<small>08AM-9AM</small>
+										<h3>Cycling Program</h3>
+										<span>Tony Stark</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-boxing.svg' %}" alt="Cycling">
+										<small>09AM-10AM</small>
+										<h3>Boxing Fitness</h3>
+										<span>Bruce Banner</span>
+									</div>
+								</div>
+							</div>
+							<!-- END sched-content -->
+
+							<div class="schedule-content" data-day="wednesday">
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-yoga.svg' %}" alt="">
+										<small>06AM-7AM</small>
+										<h3>Yoga Programs</h3>
+										<span>Wanda Maximoff</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-dumbell.svg' %}" alt="Cycling">
+										<small>07AM-8AM</small>
+										<h3>Body Building</h3>
+										<span>Steve Rogers</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-boxing.svg' %}" alt="Cycling">
+										<small>08AM-9AM</small>
+										<h3>Boxing Fitness</h3>
+										<span>Bruce Banner</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-cycling.svg' %}" alt="">
+										<small>09AM-10AM</small>
+										<h3>Cycling Program</h3>
+										<span>Tony Stark</span>
+									</div>
+								</div>
+							</div>
+							<!-- END sched-content -->
+
+							<div class="schedule-content" data-day="thursday">
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-dumbell.svg' %}" alt="Cycling">
+										<small>06AM-7AM</small>
+										<h3>Body Building</h3>
+										<span>Clark Kent</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-yoga.svg' %}" alt="">
+										<small>07AM-8AM</small>
+										<h3>Yoga Programs</h3>
+										<span>Wanda Maximoff</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-cycling.svg' %}" alt="">
+										<small>08AM-9AM</small>
+										<h3>Cycling Program</h3>
+										<span>Tony Stark</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-boxing.svg' %}" alt="Cycling">
+										<small>09AM-10AM</small>
+										<h3>Boxing Fitness</h3>
+										<span>Bruce Wayne</span>
+									</div>
+								</div>
+							</div>
+							<!-- END sched-content -->
+
+							<div class="schedule-content" data-day="friday">
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-yoga.svg' %}" alt="">
+										<small>06AM-7AM</small>
+										<h3>Yoga Programs</h3>
+										<span>Wanda Maximoff</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-dumbell.svg' %}" alt="Cycling">
+										<small>07AM-8AM</small>
+										<h3>Body Building</h3>
+										<span>Clark Kent</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-boxing.svg' %}" alt="Cycling">
+										<small>08AM-9AM</small>
+										<h3>Boxing Fitness</h3>
+										<span>Bruce Wayne</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-cycling.svg' %}" alt="">
+										<small>09AM-10AM</small>
+										<h3>Cycling Program</h3>
+										<span>Tony Stark</span>
+									</div>
+								</div>
+							</div>
+							<!-- END sched-content -->
+
+							<div class="schedule-content" data-day="saturday">
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-dumbell.svg' %}" alt="Cycling">
+										<small>06AM-7AM</small>
+										<h3>Body Building</h3>
+										<span>Clark Kent</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-yoga.svg' %}" alt="">
+										<small>07AM-8AM</small>
+										<h3>Yoga Programs</h3>
+										<span>Wanda Maximoff</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-cycling.svg' %}" alt="">
+										<small>08AM-9AM</small>
+										<h3>Cycling Program</h3>
+										<span>Tony Stark</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<img src="{% static 'images/fit-boxing.svg' %}" alt="Cycling">
+										<small>09AM-10AM</small>
+										<h3>Boxing Fitness</h3>
+										<span>Bruce Wayne</span>
+									</div>
+								</div>
+							</div>
+							<!-- END sched-content -->
+						</div>
+
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 animate-box">
+							<h3 class="section-title">About Us</h3>
+							<p>Helping you reach your health & Fitness Goals.Cusat fitness offers an atmosphere unique in the fitness industry. We focus on creating healthy lifestyles through all disciplines of fitness training.Our clientele will learn how to create their own path to wellness using disciplines such as boot-camp style training, yoga, weightlifting, martial arts, suspension training, athlete training and combination classes. CUSAT fitness offers an environment that is the truest embodiment of crosstraining available under one roof.</p>
+						</div>
+
+						<div class="col-md-4 animate-box">
+							<h3 class="section-title">Our Address</h3>
+							<ul class="contact-info">
+								<li><i class="icon-map-marker"></i>Cusat, Kalamassery</li>
+								<li><i class="icon-phone"></i>987-654-3210</li>
+								<li><i class="icon-envelope"></i><a href="#">fitness@cusat.com</a></li>
+								<li><i class="icon-globe2"></i><a href="#">www.cusatfitness.com</a></li>
+							</ul>
+						</div>
+					<div class="col-md-4 animate-box">
+							<h3 class="section-title">Drop us a line</h3>
+
+							<form method="POST"> {% csrf_token %}
+								{{ form|crispy }}
+								<button type="submit" class="btn btn-secondary submit p-3">Submit</button>
+							</form>
+
+						</div>
+					<div class="row copy-right">
+						<div class="col-md-6 col-md-offset-3 text-center">
+							<p class="fh5co-social-icons">
+								<a href="#"><i class="icon-twitter2"></i></a>
+								<a href="#"><i class="icon-facebook2"></i></a>
+								<a href="#"><i class="icon-instagram"></i></a>
+								<a href="#"><i class="icon-dribbble2"></i></a>
+								<a href="#"><i class="icon-youtube"></i></a>
+							</p>
+							<p>Copyright 2021 CUSAT fitness. All Rights Reserved.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+
+	</div>
+	<!-- END fh5co-page -->
+
+	</div>
+	<!-- END fh5co-wrapper -->
+
+	<!-- jQuery -->
+
+
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+	<!-- Stellar -->
+	<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+	<!-- Superfish -->
+	<script src="{% static 'js/hoverIntent.js' %}"></script>
+	<script src="{% static 'js/superfish.js' %}"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="{% static 'js/main.js' %}"></script>
+
+
+	</body>
+{% endblock %}
+</html>
+

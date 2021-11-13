@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+{% extends "users/base.html" %}
+{% block content %}
+{% load static %}
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CUSAT Fitness Centre</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="{% static 'css/superfish.css' %}">
+
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+	<!-- Modernizr JS -->
+	<script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		<div id="fh5co-wrapper">
+		<div id="fh5co-page">
+		<div id="fh5co-header">
+			<header id="fh5co-header-section">
+				<div class="container">
+					<div class="nav-header">
+						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+						<h1 id="fh5co-logo"><a href="{% url 'profile' %}">CUSAT<span>FITNESS</span></a></h1>
+						<!-- START #fh5co-menu-wrap -->
+						<nav id="fh5co-menu-wrap" role="navigation">
+							<ul class="sf-menu" id="fh5co-primary-menu">
+								<li>
+									<a href="{% url 'profile' %}">Personal Details</a>
+								</li>
+								<li>
+									<a href="{% url 'workout' %}" class="fh5co-sub-ddown">Workout Plan</a>
+									 
+								</li>
+								<li>
+									<a href="{% url 'diet' %}" class="fh5co-sub-ddown">Diet Plan</a>
+									 
+								</li>
+								<li><a href="{% url 'logout' %}">Logout</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>		
+		</div>
+		<!-- end:fh5co-header -->
+		<div class="fh5co-parallax" style="background-image: url({% static 'images/workout.jpg' %});" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
+						<div class="fh5co-intro fh5co-table-cell animate-box">
+							<h1 class="text-center" >TARGET: WEIGHT LOSS</h1>
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end: fh5co-parallax -->
+		<!-- end:fh5co-hero -->
+		<div id="fh5co-programs-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="heading-section text-center animate-box">
+							<h2>Weight Loss</h2>
+                            <p>Here’s the basic breakdown of what you’ll be doing:
+                                Strength training three days a week, one hour per session
+                                High-intensity interval training one day a week, 20 minutes per session
+                                Steady-state cardio one day a week, 35 to 45 minutes per session</p>
+                                <p>Two days of active recovery</p>
+                               <p><b> WATCH</b></p>
+                                
+                                
+                                <p><b>20-Minute Total Arms Workout</b></p>
+                                
+                                
+                                <p>Every workout should begin with at least five to 10 minutes of warming up. Rosante likes to start with foam rolling, which helps with mobility. Then move into a dynamic warm-up to get the blood flow going. Here’s a five-minute warm-up to try.
+                                
+                                After your workout, make sure you take time to cool down to relax your nervous system, says Rosante. “My favorite thing to do with a client is to lay them down, put their feet up a wall so that their legs are elevated, and just have them breathe into the belly, five seconds to inhale and five seconds to exhale, just to mellow everything out.” After a couple minutes, stretch out your major muscle groups (flexibility is increased when muscles are warm), and hold each stretch for at least three breaths. Here are four cool-down stretches to try.
+                                
+                                Now, get ready to lift heavier, move faster, and lose more.</p>
+                                
+                               <p><b><u> Strength Training — 1 Hour — 3 Days Per Week</u></b></p>
+                                
+                               <p> You may think you have to do cardio, cardio, cardio if you're trying to lose weight, but strength training is incredibly important because having more muscle mass increases your metabolic rate, which means you'll burn more calories at rest while your body works to maintain muscle tissue.</p>
+                                
+                                
+                                
+                               <p> You'll want to do full-body training sessions, says Rosante. Working specific body parts for a full session (like chest and triceps) can be great, but when life happens and you have to miss a workout, your routine (and muscles) will be imbalanced, he says. Hitting it all in one training session is a better bet for most people.</p>
+                                
+                               <p> What to do:</p>
+                                
+                                <p><b>1) Compound lower-body exercise (e.g. deadlift, squat)</b></p>
+                                
+                               <p> Any compound lower-body move or variation will work for this one, like a goblet squat or a dumbbell deadlift, says Rosante. (A compound movement is one that works multiple muscle groups.) The key here is to lift heavy—"You're talking about using some of the biggest muscle groups in your body, and in order to get those muscles to respond, you need to challenge them," he says.
+                                
+                                There's no set amount of reps or sets for this part of the workout—he recommends working up to your five-rep max during every session. This means starting at a weight that's not challenging and working your way up. Do five reps with a relatively light weight, rest, do five reps with weight that's five pounds heavier, rest, and keep repeating this pattern, using five more pounds every time. When you hit a weight where you can only do five with good form, you're done—keep that number in mind and try to beat it over time.</p>
+                                
+                               <p><b>2) Upper-body superset: Upper-body pushing exercise (e.g. dumbbell bench press, push-up) & upper-body pulling exercise (e.g. single-arm bent-over row, dumbbell curl)</b></p>
+                                
+                               <p> You’ll be supersetting these moves, which means doing one set of the first exercise followed immediately by a set of the other. Rosante recommends doing three sets of 12 reps of each move. Don’t rest in between the two movements (raising your heart rate incorporates some cardio work), but you can take up to a 60-second break before starting a new set. Alternating between pushing and pulling movements allows you to work opposing muscle groups, says Rosante.</p>
+                                
+                               <p><b>3) Lower-body/core superset: Unilateral lower-body move (e.g. reverse lunge, step-up) & core move (e.g. plank, Russian twists)</b></p>
+                                
+                               <p> A unilateral lower-body move is one where you work one leg at a time (another example is a Bulgarian split squat). By working only one side at a time, you can be sure you're not relying on one leg more than the other. After you've done both sides, you can superset it with an abs movement. Again, do three sets of 12 reps without resting in between the exercises (feel free to take 60 seconds between sets). If you choose a plank for the core move, hold for 30 seconds.</p>
+                                
+                               <p><b> 4) Metabolic finisher</b></p>
+                                
+                               <p> This is where you'll get a boost of cardio in. Rosante has his clients do a metabolic finisher at the end of a strength workout to get the heart rate going for more immediate calorie burn. You could choose an exercise and do it for a certain amount of time (say, three minutes of quickly jumping rope), or decide to do a certain number of a move and finish them as quickly as possible (for example, doing 15 burpees as fast as you can). The time you take and what you do are entirely up to you, says Rosante, so mix it up. If you need a starting point, he suggests doing 10 burpees, 10 mountain climbers, and 10 plank ups for seven minutes, trying to do as many rounds as possible (and aiming to beat yourself next time). Then, cool it down, and you're done for the day!</p>
+                                
+                               <p><b><u> High-Intensity Interval Training — 20 Minutes — 1 Day Per Week</u></b></p>
+                                
+                                
+                               <p>The first of your two days of cardio should be a high-intensity interval training, or HIIT. Steady-state cardio does have a place in your routine (we’ll get there), but don’t forget that intensity is your friend.</p>
+                                
+                               <p> "This is going to incite way more fat loss than just steady-state cardio," says Rosante. "When you're working in that high-intensity threshold you're not only burning a lot of calories during the workout, but you raise your metabolic rate significantly afterwards." Your body will need to work harder and longer to return to a resting state, burning more calories in the process.</p>
+                                
+                                <p> What to do:</p>
+                                
+                                <p>Choose an activity you like as a template—maybe it's running, cycling, or bodyweight moves (burpees, anyone?). Whatever it is, push as hard as you possibly can for 30 seconds, then back off for a rest period. How long you rest will depend on your fitness level. If you’re just starting, you may want to try a 2-to-1 rest-to-work ratio, says Rosante (so, 30 seconds of work followed by 60 seconds of rest). Then you can reduce your rest time every week. You could also try Tabata intervals once you get comfortable—that’s 20 seconds of extremely hard work to 10 seconds of rest. Whatever you choose, repeat that work/rest circuit until your 20 minutes are up.</p>
+                                
+                                <p><b><u>Steady-State Cardio — 35 to 45 Minutes — 1 Day Per Week</u></b></p>
+                               <p> And here’s your second day of cardio. This time it’s all about that long, slow burn. “Steady-state cardio raises the heart rate, speeds recovery, and improves your body's ability to use oxygen properly,” says Rosante. “All movement is great movement!”</p>
+                                
+                               <p> What to do:</p>
+                                
+                               <p> Whatever you want! Running, rowing, swimming, hiking, kayaking...the list goes on. Anything that gets your heart rate up but you can still carry a conversation through, says Rosante.</p>
+                                
+                                <p><b> <u> Active Recovery — 2 Days Per Week</u></b></p>
+                             
+                              <p>  Two days out of your week will be active recovery days—this is when your body has a chance to rest up and rebuild muscle fibers that you’ve been tearing during your workouts (this is where you really get stronger).
+                                
+                                "You want to lay off those heavy workouts in favor of just some gentle movement,” says Rosante. Key words: gentle movement. An active recovery day isn't a free pass to lie on the couch and do nothing. "Movement helps increase blood flow, driving more oxygen rich blood to your muscles to speed recovery," he explains. "Faster recovery could equal faster results."
+                                
+                                So as long as you're moving around a bit, you're good to go. “If there’s something you really love to do, go do that. If you just want to go for a walk, do that. And if you just want to hang out, do that! Enjoy your life.”</p>
+                                </p>
+					
+						</div>
+					</div>
+				</div>
+				<div class="row text-center">
+					
+					
+				</div>
+			</div>
+		</div>
+		
+	<!-- END fh5co-page -->
+
+	</div>
+	<!-- END fh5co-wrapper -->
+
+	<!-- jQuery -->
+
+
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+	<!-- Stellar -->
+	<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+	<!-- Superfish -->
+	<script src="{% static 'js/hoverIntent.js' %}"></script>
+	<script src="{% static 'js/superfish.js' %}"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="{% static 'js/main.js' %}"></script>
+
+
+	</body>
+{% endblock %}
+</html>
+

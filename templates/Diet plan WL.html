@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+{% extends "users/base.html" %}
+{% block content %}
+{% load static %}
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CUSAT Fitness Centre</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="{% static 'css/superfish.css' %}">
+
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+	<!-- Modernizr JS -->
+	<script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		<div id="fh5co-wrapper">
+		<div id="fh5co-page">
+		<div id="fh5co-header">
+			<header id="fh5co-header-section">
+				<div class="container">
+					<div class="nav-header">
+						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+						<h1 id="fh5co-logo"><a href="{% url 'profile' %}">CUSAT<span>FITNESS</span></a></h1>
+						<!-- START #fh5co-menu-wrap -->
+						<nav id="fh5co-menu-wrap" role="navigation">
+							<ul class="sf-menu" id="fh5co-primary-menu">
+								<li>
+									<a href="{% url 'profile' %}">Personal Details</a>
+								</li>
+								<li>
+									<a href="{% url 'workout' %}" class="fh5co-sub-ddown">Workout Plan</a>
+									 
+								</li>
+								<li>
+									<a href="{% url 'diet' %}" class="fh5co-sub-ddown">Diet Plan</a>
+									 
+								</li>
+								<li><a href="{% url 'logout' %}">Logout</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>		
+		</div>
+		<!-- end:fh5co-header -->
+		<div class="fh5co-parallax" style="background-image: url({% static 'images/ddd.jpg' %});" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
+						<div class="fh5co-intro fh5co-table-cell animate-box">
+							<h1 class="text-center" >DIET PLAN: <br>WEIGHT LOSS</h1>
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end: fh5co-parallax -->
+		<!-- end:fh5co-hero -->
+		<div id="fh5co-programs-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="heading-section text-center animate-box">
+							<h2>Weight Loss</h2>
+                           <p><b><u> 1200 Calorie Diet Plan</u></b></p>
+<p>A lot can be spoken about what goes into an ideal diet chart. However, one’s nutritional requirement varies based on various factors. It could change depending on gender, for example, male dietary requirements vary from that of a female. Geography can play a role as well, with North Indian diets being largely different from South Indian ones. Meal preferences come into play since the consumption of food by a vegetarian or a vegan differing largely from that by a non-vegetarian.
+
+However, we have put together a diet plan for weight loss with Indian food. This 7 day diet plan, 1200 calorie diet plan is a sample, and should not be followed by any individual without consulting with a nutritionist.</p>
+
+<p><b>Day 1:</b></p>
+<p>After starting your day with cucumber water, have oats porridge and mixed nuts for breakfast.
+Have a roti with dal and gajar matar sabzi for lunch.
+Follow that up with dal and lauki sabzi to go with a roti for dinner.</p>
+<p>Day 1	Diet Chart</p>
+<p>6:30 AM	Cucumber Detox Water(1 glass)</p>
+<p>8:00 AM	Oats Porridge in Skimmed Milk(1 bowl)</p>
+<p>Mixed Nuts(25 grams)</p>
+
+<p>12:00 PM	Skimmed Milk Paneer(100 grams)</p>
+<p>2:00 PM	Mixed Vegetable Salad(1 katori)</p>
+<p>2:10 PM	Dal(1 katori)Gajar Matar Sabzi(1 katori)</p>
+<p>Roti (1 roti/chapati)</p>
+
+<p>4:00 PM	Cut Fruits(1 cup)Buttermilk(1 glass)</p>
+<p>5:30 PM	Tea with Less Sugar and Milk(1 teacup)</p>
+<p>8:50 PM	Mixed Vegetable Salad(1 katori)</p>
+<p>9:00 PM	Dal(1 katori)Lauki Sabzi(1 katori)</p>
+ <p>Roti (1 roti/chapati)</p>
+
+<p><b>Day 2:</b></p>
+<p>The second day, eat a mixed vegetable stuffed roti with curd for breakfast.
+For lunch, have half a katori of methi rice along with lentil curry.
+End your day with sauteed vegetables and green chutney.</p>
+<p>Day 2	Diet Chart</p>
+<p>6:30 AM	Cucumber Detox Water(1 glass)</p>
+<p>8:00 AM	Curd(1.5 katori)Mixed Vegetable Stuffed Roti(2 piece)</p>
+<p>12:00 PM	Skimmed Milk Paneer(100 grams)</p>
+<p>2:00 PM	Mixed Vegetable Salad(1 katori)</p>
+<p>2:10 PM	Lentil Curry(0.75 bowl)Methi Rice(0.5 katori)</p>
+<p>4:00 PM	Apple(0.5 small (2-3/4″ dia))Buttermilk(1 glass)</p>
+<p>5:30 PM	Coffee with Milk and Less Sugar(0.5 tea cup)</p>
+<p>8:50 PM	Mixed Vegetable Salad(1 katori)</p>
+<p>9:00 PM	Sauteed Vegetables with Paneer(1 katori)Roti (1 roti/chapati)</p>
+<p>Green Chutney(2 tablespoon)</p>
+
+<p><b>Day 3:</b></p>
+<p>Breakfast on day 3 would include Multigrain Toast and Skim Milk Yogurt.
+In the afternoon, have sauteed vegetables with paneer and some green chutney.
+Half a katori of methi rice and some lentil curry to make sure you end the day on a healthy note.</p>
+<p>Day 3	Diet Chart</p>
+<p>6:30 AM	Cucumber Detox Water(1 glass)</p>
+<p>8:00 AM	Skim Milk Yoghurt(1 cup (8 fl oz))Multigrain Toast(2 toast)</p>
+<p>12:00 PM	Skimmed Milk Paneer(100 grams)</p>
+<p>2:00 PM	Mixed Vegetable Salad(1 katori)</p>
+<p>2:10 PM	Sauteed Vegetables with Paneer(1 katori)Roti (1 roti/chapati)</p>
+<p>Green Chutney(2 tablespoon)</p>
+
+<p>4:00 PM	Banana(0.5 small (6″ to 6-7/8″ long))Buttermilk(1 glass)</p>
+<p>5:30 PM	Tea with Less Sugar and Milk(1 teacup)</p>
+<p>8:50 PM	Mixed Vegetable Salad(1 katori)</p>
+<p>9:00 PM	Lentil Curry(0.75 bowl)Methi Rice(0.5 katori)</p>
+<p><b>Day 4:</b></p>
+<p>Start Day 4 with a Fruit and Nuts Yogurt Smoothie and Egg Omelette
+Follow that up with Moong Dal, Bhindi Sabzi, and roti.
+Complete the day’s food intake with steamed rice and palak chole.</p>
+<p>Day 4	Diet Chart</p>
+<p>6:30 AM	Cucumber Detox Water(1 glass)</p>
+<p>8:00 AM	Fruit and Nuts Yogurt Smoothie(0.75 glass)</p>
+<p>Egg Omelette(1 serve(one egg))</p>
+
+<p>12:00 PM	Skimmed Milk Paneer(100 grams)</p>
+<p>2:00 PM	Mixed Vegetable Salad(1 katori)</p>
+<p>2:10 PM	Green Gram Whole Dal Cooked(1 katori)Bhindi sabzi(1 katori)</p>
+<p>Roti (1 roti/chapati)</p>
+
+<p>4:00 PM	Orange(1 fruit (2-5/8″ dia))Buttermilk(1 glass)</p>
+<p>5:30 PM	Coffee with Milk and Less Sugar(0.5 tea cup)</p>
+<p>8:50 PM	Mixed Vegetable Salad(1 katori)</p>
+<p>9:00 PM	Palak Chole(1 bowl)Steamed Rice(0.5 katori)</p>
+<p><b>Day 5:</b></p>
+Have a glass of skimmed milk and peas poha for breakfast on the fifth day.
+Eat a missi roti with low fat paneer curry in the afternoon.
+End the day with roti, curd and aloo baingan tamatar ki sabzi.</p>
+<p>Day 5	Diet Chart</p>
+    <p>6:30 AM	Cucumber Detox Water(1 glass)</p>
+        <p>8:00 AM	Skimmed Milk(1 glass)Peas Poha(1.5 katori)</p>
+            <p>12:00 PM	Skimmed Milk Paneer(100 grams)</p>
+                <p>2:00 PM	Mixed Vegetable Salad(1 katori)</p>
+                    <p>2:10 PM	Low Fat Paneer Curry(1.5 katori)Missi Roti(1 roti)</p>
+                        <p>4:00 PM	Papaya(1 cup 1″ pieces)Buttermilk(1 glass)</p>
+                            <p>5:30 PM	Tea with Less Sugar and Milk(1 teacup)</p>
+                                <p>8:50 PM	Mixed Vegetable Salad(1 katori)</p>
+                                    <p>9:00 PM	Curd(1.5 katori)Aloo Baingan Tamatar Ki Sabzi(1 katori)</p>
+                                        <p>Roti (1 roti/chapati)</p>
+
+<p><b>Day 6:</b></p>
+<p>On Day 6, have idli with sambar for breakfast
+For lunch, roti with curd and aloo baingan tamatar ki sabzi.
+To end Day 6, eat green gram with roti and bhindi sabzi.</p>
+<p>Day 6	Diet Chart</p>
+    <p>6:30 AM	Cucumber Detox Water(1 glass)</p>
+        <p>8:00 AM	Mixed Sambar(1 bowl)Idli(2 idli)</p>
+            <p>12:00 PM	Skimmed Milk Paneer(100 grams)</p>
+                <p>2:00 PM	Mixed Vegetable Salad(1 katori)</p>
+                    <p>2:10 PM	Curd(1.5 katori)Aloo Baingan Tamatar Ki Sabzi(1 katori)</p>
+                        <p>Roti (1 roti/chapati)</p>
+
+                            <p>4:00 PM	Cut Fruits(1 cup)Buttermilk(1 glass)</p>
+                                <p>5:30 PM	Coffee with Milk and Less Sugar(0.5 tea cup)</p>
+                                    <p>8:50 PM	Mixed Vegetable Salad(1 katori)</p>
+                                        <p>9:00 PM	Green Gram Whole Dal Cooked(1 katori)Bhindi sabzi(1 katori)</p>
+                                            <p>Roti (1 roti/chapati)</p>
+
+<p><b>Day 7:</b></p>
+<p>On the seventh day, start with besan chilla and green garlic chutney.
+Have steamed rice and palak chole for lunch.
+End the week on a healthy note with low fat paneer curry and missi roti.</p>
+<p>Day 7	Diet Chart</p>
+    <p>6:30 AM	Cucumber Detox Water(1 glass)</p>
+        <p>8:00 AM	Besan Chilla(2 cheela)Green Garlic Chutney(3 tablespoon)</p>
+            <p>12:00 PM	Skimmed Milk Paneer(100 grams)</p>
+                <p>2:00 PM	Mixed Vegetable Salad(1 katori)</p>
+                    <p>2:10 PM	Palak Chole(1 bowl)Steamed Rice(0.5 katori)</p>
+                        <p>4:00 PM	Apple(0.5 small (2-3/4″ dia))Buttermilk(1 glass)</p>
+                            <p>5:30 PM	Tea with Less Sugar and Milk(1 teacup)</p>
+                                <p>8:50 PM	Mixed Vegetable Salad(1 katori)</p>
+                                    <p>9:00 PM	Low Fat Paneer Curry(1 katori)Missi Roti(1 roti)</p>
+                                        <p>Balanced Diet Chart</p>
+                                            <p><b>While creating a diet chart, it is important to make sure it is balanced, in order to ensure that you receive all the required nutrients. Include the following nutrients in your diet plan:</b></p>
+
+<p><b>1. Carbohydrates</b></p>
+<p>Carbs are the body’s main source of energy and should make up half of your daily calorie requirement. However, it’s important to choose the right type of carbs. Simple carbs, such as bread, biscuit, white rice and wheat flour, contain too much sugar and are bad for you. Instead, opt for complex carbs that are high in fiber and packed with nutrients as compared to simple carbs. Fiber-rich complex carbs are slow to digest, leave you feeling full for longer, and are therefore the best option for weight control. Brown rice, millets such as ragi and oats are all good complex carb choices.
+
+best Indian diet plan carbs.</p>
+
+<p><b>2. Proteins</b></p>
+<p>Most Indians fail to meet their daily protein requirement. This is troublesome, as proteins are essential to help paper writer the body build and repair tissue, muscles, cartilage and skin, as well as pump blood. A high protein diet can also help you lose weight, as it helps build muscle – which burns more calories than fat.
+
+About 30% of your diet should consist of protein in the form of whole dals, paneer, chana, milk, leafy greens, eggs, white meat or sprouts. Having one helping of protein with every meal is essential.
+
+best Indian diet plan protein rich food.</p>
+
+<p><b>3. Fats</b></p>
+<p>A food group that has acquired a bad reputation, fats are essential for the body as they synthesize hormones, store vitamins and provide energy. Experts suggest one-fifth or 20% of your diet comprise of healthy fats – polyunsaturated, monounsaturated and Omega-3 fatty acids. Using a combination of oils for different meals – including olive oil, rice bran oil, mustard oil, soya bean, sesame, sunflower and groundnut oil – along with restricted quantities of butter and ghee is the most optimal way to consume fats. Avoid trans fats – that are found in fried snacks, completely.
+
+best Indian diet plan oils.</p>
+
+<p><b>4. Vitamins and minerals</b></p>
+<p>Vitamin A, E, B12, D, calcium and iron are essential for the body as they support metabolism, nerve and muscle function, bone maintenance, and cell production. Primarily derived from plants, meat and fish, minerals can be found in nuts, oilseeds, fruits and green leafy vegetables.
+
+Experts recommend consuming 100 grams of greens and 100 grams of fruits everyday.
+
+best Indian diet plan minerals and vitamins.</p>
+
+<p><b>5. Meal Swaps</b></p>
+<p>One of the easiest ways to eat healthy is to swap out the unhealthy foods in your diet with healthier alternatives. For example, fulfil your cravings for a snack to munch on with air popped popcorn instead of relying on potato chips. Check out a few healthy meal swaps that you could try going forward:</p>
+
+
+<p>Along with a balanced diet plan, these habits will help you stay healthy</p>
+    <p>Opt for 5-6 meals a day: Instead of three large meals, try having three modest meals and a few snack breaks through the day in controlled portions. Spacing your meals across regular intervals prevents acidity and bloating, and also keeps hunger pangs at bay. Quit your junk food habit by making healthier snack choices.</p>
+        <p>Have an early dinner: Indians eat dinner later than the other societies across the world. Metabolism slows down at night, so a late dinner can lead to weight gain. Experts recommend you eat your last meal of the day by 8 pm.</p>
+            <p>Drink a lot of water: How does drinking more water help you lose weight? For starters, it’s zero calories. Also, drinking a glass of water can help curb hunger pangs. Have six to eight glasses of water daily to lose weight. You can also find a list of drinks that will help you lose weight here.</p>
+                <p>Eat a lot of fiber: A person needs at least 15 gm of fiber every day, as it aids digestion and heart health. Oats, lentils, flax seeds, apples and broccoli are some great sources of fiber.</p>
+                    <p>You don’t have to ditch your regular food habits or make massive changes to your diet, you just need the best balanced Indian diet plan to get fit!</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="row text-center">
+					
+					
+				</div>
+			</div>
+		</div>
+		
+	<!-- END fh5co-page -->
+
+	</div>
+	<!-- END fh5co-wrapper -->
+
+	<!-- jQuery -->
+
+
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+	<!-- Stellar -->
+	<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+	<!-- Superfish -->
+	<script src="{% static 'js/hoverIntent.js' %}"></script>
+	<script src="{% static 'js/superfish.js' %}"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="{% static 'js/main.js' %}"></script>
+
+
+	</body>
+{% endblock %}
+</html>
+

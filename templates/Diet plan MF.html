@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+{% extends "users/base.html" %}
+{% block content %}
+{% load static %}
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CUSAT Fitness Centre</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="{% static 'css/superfish.css' %}">
+
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+	<!-- Modernizr JS -->
+	<script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		<div id="fh5co-wrapper">
+		<div id="fh5co-page">
+		<div id="fh5co-header">
+			<header id="fh5co-header-section">
+				<div class="container">
+					<div class="nav-header">
+						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+						<h1 id="fh5co-logo"><a href="{% url 'profile' %}">CUSAT<span>FITNESS</span></a></h1>
+						<!-- START #fh5co-menu-wrap -->
+						<nav id="fh5co-menu-wrap" role="navigation">
+							<ul class="sf-menu" id="fh5co-primary-menu">
+								<li>
+									<a href="{% url 'profile' %}">Personal Details</a>
+								</li>
+								<li>
+									<a href="{% url 'workout' %}" class="fh5co-sub-ddown">Workout Plan</a>
+									 
+								</li>
+								<li>
+									<a href="{% url 'diet' %}" class="fh5co-sub-ddown">Diet Plan</a>
+									 
+								</li>
+								<li><a href="{% url 'logout' %}">Logout</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>		
+		</div>
+		<!-- end:fh5co-header -->
+		<div class="fh5co-parallax" style="background-image: url({% static 'images/ddd.jpg' %});" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
+						<div class="fh5co-intro fh5co-table-cell animate-box">
+							<h1 class="text-center" >DIET PLAN: <br>MAINTAIN FITNESS</h1>
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end: fh5co-parallax -->
+		<!-- end:fh5co-hero -->
+		<div id="fh5co-programs-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="heading-section text-center animate-box">
+							<h2>Maintain Fitness</h2>
+                            <p><b><u>Ideal 7-day gym diet</u></b></p>
+
+<p>While calories and macronutrients are important, the ideal gym diet will be one that positively influences health. This is a diet that is rich in vitamins and minerals where all three macronutrients are consumed and nutrient-sparse foods are restricted.
+Below you can find a 7-day gym diet guide:</p>
+
+<p><b>Day 1</b></p>
+
+<p>Breakfast:	Oats Banana Pancakes with Protein Shake<br>
+Lunch:	Multigrain roti with palak chicken Avocado bell pepper salad<br>
+Pre-Workout Snack:	Bananas<br>
+Dinner: (Post-Workout)	Brown rice, peas paneer curry, sprouts vegetable salad</p>
+
+<p><b>Day 2</b></p>
+
+<p>Breakfast	:Oatmeal with Greek Yogurt & Seasonal fruits,
+Mango Juice<br>
+Lunch	:Multigrain roti, fish curry, vegetable salad<br>
+Pre-Workout Snack:	Toast with Jam<br>
+Dinner
+(Post-Workout):	Broken wheat khichidi, carrot raita, egg white, and vegetable salad</p>
+
+<p><b>Day 3</b></p>
+
+<p>Breakfast:	Poached Eggs,
+Whole Grain Toast,
+Protein Shake<br>
+Lunch:	Quinoa upma, chicken and broccoli salad<br>
+Pre-Workout Snack:	Mixed Nuts & Dried Fruits<br>
+Dinner
+(Post-Workout):	Lean Beef and vegetable curry, brown rice, cucumber raita,
+Baby Potatoes,
+Chocolate Milk</p>
+
+<p><b>Day 4</b></p>
+
+<p>Breakfast:	Oatmeal with Honey,
+Apple Juice<br>
+Lunch:	Grilled Chicken,
+Salad,
+Whole Grain Bread<br>
+Pre-Workout Snack:	Toast with Peanut Butter<br>
+Dinner
+(Post-Workout):	Methi Chicken,
+Brown Rice,
+Broccoli,
+Protein Shake</p>
+
+<p><b>Day 5</b></p>
+
+<p>Breakfast:	Scrambled Egg,
+Whole Grain Toast,
+Smoothie<br>
+Lunch:	Grilled chicken vegetable roti rolls,
+Green Salad<br>
+Pre-Workout Snack:	Mixed Nuts & Dried Fruits<br>
+Dinner
+(Post-Workout):	Chicken Stir Fry,
+Spring Onion, Peppers & Broccoli
+Chocolate Milk</p>
+
+<p><b>Day 6</b></p>
+
+<p>Breakfast	:Oatmeal,
+Whole Grain Toast,
+Orange Juice<br>
+Lunch:	Whole Grain Chicken Wrap,
+Black Beans, Peppers & Greek Yogurt<br>
+Pre-Workout Snack	:Apple with peanut butter<br>
+Dinner
+(Post-Workout):	Keema bhurji and multigrain rotiLean Beef Mince,
+Sweet Potato,
+Protein Shake</p>
+
+<p><b>Day 7</b></p>
+
+<p>Breakfast:	Oatmeal with Nuts,
+Smoothie<br>
+Lunch:	Whole wheat pasta with chicken and
+Green Salad<br>
+Pre-Workout Snack:	Granola or Cereal<br>
+Dinner
+(Post-Workout):	Fish curry, boiled green peas salad,
+Brown Rice,
+Garden Peas,
+Milk</p>
+
+<p>While the above guide will prove to be useful, be aware that when it comes to nutrition, everyone is different. Not only will physical attributes determine your nutritional requirements, the goals that you have set will also influence your diet.
+For example, two goals that are extremely common are fat loss and muscle growth. To lose fat, calories must be restricted which will cause stored body fat to be broken down. For muscle growth, calorie intake must be increased to build significant muscle size as additional calories are required to accelerate the recovery process.
+Macro-nutrient demands for both fat loss and muscle growth are similar. Firstly, protein intake should remain high for both. For muscle growth, protein is evidently required for building mass. The role of protein in fat loss is to prevent muscle tissue breakdown as far as possible.
+As highlighted, carbohydrates are extremely important in energy and replenishment. As a result, those looking to lose weight and build muscle should get the majority of their calories from carb sources.  
+While consuming healthy fats is important, reducing the total amount of fat consumed helps to most effectively restrict calories. This is because, at nine calories per gram, fats contain the greatest number of calories per gram – protein and carbohydrates both contain four calories per gram.</p>
+
+<p><b>Foods to Avoid</b><br>
+
+In the same way that proper nutrition has the potential to optimize performance and adaptation, improper nutrition can detrimentally affect progress and health. The following three foods should be avoided or limited as far as possible.
+Trans fats are a type of dietary fat that has consistently been shown to impact health. While trans fats do naturally occur in small quantities, artificial trans fats are notoriously hazardous. Artificial trans fats can be found in baked goods, fast food, and many snack foods.
+As mentioned, many simple carbohydrate foods do not have great nutritional value and contain a high amount of sugar. While they may be useful for a short term energy boost, consuming a large number of simple carbs can be detrimental.
+Eating a great quantity of simple carbohydrates will spike blood sugar levels initially. However, very quickly, blood sugar levels will nosedive and can leave you feeling lethargic which is less than optimal for exercise and performance.
+Although technically not a food, alcohol is a substance that should also be limited as far as possible. There is much research to indicate that alcohol negatively impacts recovery and may even interfere with the muscle-building process.</p>
+
+<p><b><u>Nutrition Do’s and Don’ts</u></b></p>
+<p>This final section will highlight a number of do’s and don’ts to help keep you on the right track with your nutrition.</p>
+
+<p><b>Do’s:</b><br>
+– Consume all 3 macronutrients<br>
+– Ensure that you are eating a wide range of fruit and vegetables for comprehensive consumption of vitamins and minerals<br>
+– Primarily choose complex carbs over simple carbs<br>
+– Ensure that you are consuming protein regularly throughout the day<br>
+– Consume unsaturated fats over saturated and trans fats<br>
+– Moderate your consumption of produce that will negatively impact health and gym progress<br>
+– Maintain hydration levels</p>
+
+<p><b>Don’t:</b><br>
+– Cut a macro-nutrient from your diet as all are required for specific functions<br>
+– Skip meals, especially in the lead up to or after a workout<br>
+– Eat a “heavy” complex carb meal too close to beginning a workout<br>
+– Rely too heavily on simple carbs to fuel performance<br>
+– Make poor nutritional choices for the sake of gaining calories<br></p>
+
+<p><b>Summary:</b>
+It is now clear that there are many different aspects of nutrition that must be considered when it comes to optimizing gym progress and to generally improve health. Following the guidelines and recommendations outlined in this article will allow you to make substantial changes to your performance and health.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row text-center">
+					
+					
+				</div>
+			</div>
+		</div>
+		
+	<!-- END fh5co-page -->
+
+	</div>
+	<!-- END fh5co-wrapper -->
+
+	<!-- jQuery -->
+
+
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+	<!-- Stellar -->
+	<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+	<!-- Superfish -->
+	<script src="{% static 'js/hoverIntent.js' %}"></script>
+	<script src="{% static 'js/superfish.js' %}"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="{% static 'js/main.js' %}"></script>
+
+
+	</body>
+{% endblock %}
+</html>
+

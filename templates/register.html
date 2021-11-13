@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+{% extends 'users/base.html' %}
+{% block content %}
+  <head>
+  <style>
+    input {max-: 12em};
+  </style>
+  	<title>Start Your Journey</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	{% load crispy_forms_tags %}
+	{% load static %}
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="{% static 'signcss/style.css' %}">
+
+	</head>
+	<body style="background-image: url({% static 'images/signupbg.jpg' %});">
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-10">
+					<div class="wrap d-md-flex">
+						<div class="text-wrap p-4 p-lg-5 d-flex img d-flex align-items-left" style="background-image: url({% static 'images/bg.jpg' %});">
+							<div class="text w-100">
+								<h2 class="mb-4">Lets start the Journey</h2>
+								<p>Even the smallest action can make a big difference in your life. Believe in yourself and go for it. The more you sweat in training, the less you bleed in combat.</p>
+							</div>
+			      </div>
+						<div class="login-wrap p-4 p-md-5">
+	      			<h3 class="mb-3">Start Your Journey</h3>
+							<form method='POST'> {% csrf_token %} 
+							{{ rForm|crispy }}
+							{{ pForm|crispy }}
+								
+				            </div>
+									</div>
+									
+									<div id="fh5co-programs-section">
+									<div class="container">
+									<div class="row">
+									<div class="col-md-8 col-md-offset-2">
+									<div class="heading-section text-center animate-box">
+				            				<button type="submit" class="btn btn-secondary submit p-3">Create an account</button>
+				            		</div>
+									</div>
+									</div>
+							</form>
+		          <div class="social-wrap">
+		          	<p class="or">
+		          		<span></span>
+		          	</p>
+		      			<p class="mb-3 text-center">Visit our profiles on social media</p>
+		      			<p class="social-media d-flex justify-content-center">
+		      				<a href="#" class="social-icon google d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a>
+									<a href="#" class="social-icon facebook d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a>
+									<a href="#" class="social-icon twitter d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a>
+								</p>
+	          	</div>
+		          <div class="w-100 text-center">
+								<p class="mt-4">Already a member? <a href="{% url 'login' %}">Sign In</a></p>
+		          </div>
+		        </div>
+		      </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src	= "{% static 'js/signjquery.min.js' %}"></script>
+  	<script src	= "{% static 'js/signpopper.js' %}"></script>
+  	<script src	= "{% static 'js/signbootstrap.min.js' %}"></script>
+  	<script src	= "{% static 'js/signup.js' %}"></script>
+
+	</body>
+{% endblock %}
+</html>
+

@@ -1,0 +1,7 @@
+{% extends "users/base.html" %}
+{% block content %}
+
+<h3> Hello, {{user.username}}. Your weight is {{user.profile.weight}} :) </h3>
+Click <a href="{% url 'logout'%}">here</a> to logout.
+
+{% endblock %}
